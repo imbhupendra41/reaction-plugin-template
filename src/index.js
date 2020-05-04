@@ -1,6 +1,5 @@
 import resolvers from "./graphql/resolvers/index.js"
-import schemas from "./graphql/mutations/index.js"
-import pkg from "../../package.json";
+import schemas from "./graphql/schemas/index.js"
 
 /**
  * @summary Import and call this function to add this plugin to your API.
@@ -15,7 +14,6 @@ export default async function register(app) {
     await app.registerPlugin({
       label: "HybrIT Plugin Template",
       name: "reaction-plugin-template",
-      version: pkg.version, // Plugin Version
       i18n, 
       graphQL: {
         resolvers,
