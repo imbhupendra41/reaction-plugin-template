@@ -1,3 +1,16 @@
-{
-    "slogan": "codier es schlimmer"
-}
+[
+  {
+    "language": "English",
+    "i18n": "en",
+    "ns": "reaction-plugin-template",
+    "translation": {
+      "reaction-plugin-template": {
+        "admin": {
+          "hybrit": {
+            "slogan": "codier es schlimmer"
+          }
+        }
+      }
+    }
+  }
+]
