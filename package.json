@@ -1,0 +1,34 @@
+{
+  "name": "reaction-plugin-template",
+  "version": "1.0.0",
+  "description": "Template for Reaction Commerce plugins",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=12.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HybrIT-dev/reaction-plugin-template.git"
+  },
+  "keywords": [
+    "Reaction",
+    "Commerce",
+    "Plugin",
+    "HybrIT"
+  ],
+  "author": {
+    "name": "Haris Spahija",
+    "email": "haris.spahija@hybrit.org",
+    "url": "https://hybrit.org/"
+  },
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/HybrIT-dev/reaction-plugin-template/issues"
+  },
+  "homepage": "https://github.com/HybrIT-dev/reaction-plugin-template",
+  "url": "https://github.com/HybrIT-dev/reaction-plugin-template"
+}
