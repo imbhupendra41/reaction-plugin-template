@@ -1,1 +1,4 @@
-// In this file the main project is exported
+// In this file the main registrer plugin is exported
+import register from "./src/index.js";
+
+export default register;
