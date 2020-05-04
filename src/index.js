@@ -14,7 +14,7 @@ export default async function register(app) {
      */
     await app.registerPlugin({
       label: "HybrIT Plugin Template",
-      name: "hybrit-plugin-template",
+      name: "reaction-plugin-template",
       version: pkg.version, // Plugin Version
       i18n, 
       graphQL: {
