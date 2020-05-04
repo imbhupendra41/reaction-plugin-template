@@ -1,0 +1,22 @@
+"enum for language"
+enum Language {
+  en
+  nl
+  de
+}
+
+type Slogan {
+  "This is the slogan message"
+  slogan: String!
+
+  "The chosen language is returned"
+  language: Language!
+}
+
+extend type Query {
+  "Sends back a slogan of HybrIT"
+  hybrit(
+    "The desired language, defaults to 'en' if nothing is defined"
+    language: Language
+  ): Slogan!
+}
