@@ -25,7 +25,7 @@ export default async function register(app) {
           startup: [startup]
       },
       collections: {
-          ExampleCollection: {
+        ExampleTemplateCollection: {
               name: "ExampleTemplateCollection"
           }
       }
