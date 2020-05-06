@@ -1,3 +1,4 @@
+import Logger from "@reactioncommerce/logger";
 /**
  * @name Query/hybrit
  * @method
@@ -13,22 +14,11 @@
 export default async function hybrit(_, args, context, info) {
     const { language } = args;
   
-    let slogan;
-  
-    switch (language) {
-      case "nl":
-        slogan = "codeer het slimmer";
-        break;
-      case "de":
-        slogan = "codier es schlimmer";
-        break;
-      default:
-        slogan = "code it smarter";
-    }
-  
+    const query = await context.queries.getLanguageSlogan(context, language)
+
     return {
-      slogan,
-      language,
-    };
+      slogan: query.translation["reaction-plugin-template"].admin.hybrit.slogan,
+      language: query.i18n,
+    }
   }
   
