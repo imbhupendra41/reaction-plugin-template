@@ -1,5 +1,3 @@
-import Logger from "@reactioncommerce/logger";
-
 /**
  * @name getLanguageSlogan
  * @method
@@ -12,16 +10,8 @@ export default async function getLanguageSlogan(context, languageCode) {
     // We can find our collection by looking into context
     const { ExampleTemplateCollection } = context.collections;
   
-    Logger.info(languageCode)
-
-
-    const data = ExampleTemplateCollection.findOne({
+    return ExampleTemplateCollection.findOne({
         i18n: languageCode
     });
-
-
-    Logger.info(data)
-
-    return data
   }
   
