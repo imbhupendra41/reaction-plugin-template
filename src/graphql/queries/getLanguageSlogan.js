@@ -1,0 +1,27 @@
+import Logger from "@reactioncommerce/logger";
+
+/**
+ * @name getLanguageSlogan
+ * @method
+ * @memberof GraphQL/ExampleTemplateCollection
+ * @summary Query the slogan based on the right langauge
+ * @param {Object} context - an object containing the per-request state
+ * @param {String} language - Language that needs to be returned
+ */
+export default async function getLanguageSlogan(context, languageCode) {
+    // We can find our collection by looking into context
+    const { ExampleTemplateCollection } = context.collections;
+  
+    Logger.info(languageCode)
+
+
+    const data = ExampleTemplateCollection.findOne({
+        i18n: languageCode
+    });
+
+
+    Logger.info(data)
+
+    return data
+  }
+  
