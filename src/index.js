@@ -25,6 +25,7 @@ export default async function register(app) {
           startup: [startup]
       },
       collections: {
+        // Make sure that the object key name is the same as the name value.
         ExampleTemplateCollection: {
               name: "ExampleTemplateCollection"
           }
