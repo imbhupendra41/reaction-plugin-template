@@ -20,3 +20,13 @@ extend type Query {
     language: Language
   ): Slogan!
 }
+
+extend type Mutation {
+  "Adds another translation for HybrIT translations"
+  hybrit(
+    "The language code that needs to be added"
+    language: Language!
+    "The slogan message that needs to be added"
+    slogan: String!
+  ): Slogan!
+}
