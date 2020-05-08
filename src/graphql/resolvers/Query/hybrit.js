@@ -1,4 +1,3 @@
-import Logger from "@reactioncommerce/logger";
 /**
  * @name Query/hybrit
  * @method
