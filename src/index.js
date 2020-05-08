@@ -1,7 +1,6 @@
 import resolvers from "./graphql/resolvers/index.js"
 import schemas from "./graphql/schemas/index.js"
 import queries from "./graphql/queries/index.js"
-import mutations from "./graphql/mutations/index.js"
 import i18n from "./i18n/index.js";
 import startup from "./startup.js";
 
@@ -20,7 +19,6 @@ export default async function register(app) {
       name: "reaction-plugin-template",
       i18n,
       queries, 
-      mutations,
       graphQL: {
         resolvers,
         schemas
