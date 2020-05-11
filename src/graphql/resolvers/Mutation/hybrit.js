@@ -11,23 +11,12 @@
  * @returns {Promise<Object>} slogan and language
  */
 export default async function hybrit(_, args, context, info) {
-  const { language } = args;
+  const { language, slogan } = args;
 
-  let slogan;
-
-  switch (language) {
-    case "nl":
-      slogan = "codeer het slimmer";
-      break;
-    case "de":
-      slogan = "codier es schlimmer";
-      break;
-    default:
-      slogan = "code it smarter";
-  }
+  const query = await context.mutations.updateSloganByLanguage(context, language, slogan)
 
   return {
-    slogan,
-    language,
-  };
+    slogan: query.value.translation["reaction-plugin-template"].admin.hybrit.slogan,
+    language: query.value.i18n,
+  }
 }
